@@ -1,1 +1,39 @@
 @use "setup";
+
+$primaryColor: #500801;
+$secondaryColor: #815600;
+$fontColor: #fff;
+$headerFontFamily: 'Petit Formal Script', cursive;
+$generalFontFamily: 'Roboto', sans-serif;
+
+
+// GENERAL
+html {
+    font-size: 62.5%;
+    font-family: $generalFontFamily;
+    color: $fontColor;
+    background-color: $primaryColor;
+}
+
+h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+section {
+    padding: 100px;
+}
