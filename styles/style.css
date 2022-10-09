@@ -262,6 +262,7 @@ button {
   padding: 10px 25px;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  cursor: pointer;
 }
 
 .wrapper {
