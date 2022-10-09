@@ -270,8 +270,14 @@ button {
   cursor: pointer;
 }
 
-.wrapper {
+.contentWrapper {
   max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.outerWrapper {
+  max-width: 1900px;
   width: 100%;
   margin: 0 auto;
 }
@@ -306,8 +312,12 @@ header nav li {
           align-items: center;
 }
 
-.headerTitle, .headerImage {
-  width: 45%;
+.headerTitle {
+  width: 47.5%;
+}
+
+.headerImage {
+  width: 47.5%;
 }
 
 h1 {
@@ -377,7 +387,7 @@ h1 {
   font-size: 20px;
   font-weight: lighter;
   line-height: 29px;
-  letter-spacing: 0;
+  letter-spacing: 0.2;
 }
 
 .latestCollection {
@@ -416,4 +426,41 @@ h1 {
 .catologueEventsCollaborationsFlex p {
   font-size: 40px;
   font-family: "Petit Formal Script", cursive;
+}
+
+.twoByTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.twoByTwoText1, .twoByTwoText2 {
+  background-color: #815600;
+}
+.twoByTwoText1 h2, .twoByTwoText2 h2 {
+  padding-bottom: 40px;
+}
+.twoByTwoText1 p, .twoByTwoText2 p {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 29px;
+  letter-spacing: 0.2;
+  padding-bottom: 40px;
+}
+
+.twoByTwoText1, .twoByTwoImage1, .twoByTwoText2, .twoByTwoImage2 {
+  width: 50%;
+}
+.twoByTwoText1 img, .twoByTwoImage1 img, .twoByTwoText2 img, .twoByTwoImage2 img {
+  width: 100%;
+}
+
+.twoByTwoText1 {
+  padding: 160px 120px 120px 240px;
+}
+
+.twoByTwoText2 {
+  padding: 160px 240px 120px 120px;
 }
