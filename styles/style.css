@@ -233,6 +233,11 @@ h1, h2, h3, p, ul {
   padding: 0;
 }
 
+h2 {
+  font-family: "Petit Formal Script", cursive;
+  font-size: 54px;
+}
+
 li {
   list-style: none;
 }
@@ -368,13 +373,47 @@ h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.handCraftedText h2 {
-  font-family: "Petit Formal Script", cursive;
-  font-size: 54px;
-}
 .handCraftedText p {
   font-size: 20px;
   font-weight: lighter;
   line-height: 29px;
   letter-spacing: 0;
+}
+
+.latestCollection {
+  background-color: #815600;
+}
+.latestCollection h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.latestCollectionFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.latestCollectionFlex li {
+  width: 33.3333333333%;
+}
+
+.catologueEventsCollaborationsFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 65%;
+  text-align: center;
+}
+.catologueEventsCollaborationsFlex i {
+  font-size: 100px;
+  padding-bottom: 5px;
+}
+.catologueEventsCollaborationsFlex p {
+  font-size: 40px;
+  font-family: "Petit Formal Script", cursive;
 }

@@ -21,6 +21,11 @@ h1, h2, h3, p, ul {
     padding: 0;
 }
 
+h2 {
+    font-family: $headerFontFamily;
+    font-size: 54px;
+}
+
 li {
     list-style: none;
 }
@@ -133,15 +138,49 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
 
-    h2 {
-        font-family: $headerFontFamily;
-        font-size: 54px;
-    }
-
     p {
         font-size: 20px;
         font-weight: lighter;
         line-height: 29px;
         letter-spacing: 0;
+    }
+}
+
+// LATEST COLLECTION SECTION
+
+.latestCollection {
+    background-color: #815600;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+}
+
+.latestCollectionFlex {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        width: calc(100% / 3);
+    }
+}
+
+// CATOLOGUE, EVENTS, COLLABORATIONS SECTION
+
+.catologueEventsCollaborationsFlex {
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    text-align: center;
+
+    i {
+        font-size: 100px;
+        padding-bottom: 5px;
+    }
+
+    p {
+        font-size: 40px;
+        font-family: $headerFontFamily;
     }
 }
