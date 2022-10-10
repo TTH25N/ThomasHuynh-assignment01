@@ -270,54 +270,57 @@ button {
   cursor: pointer;
 }
 
-.contentWrapper {
+.headerWrapper {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
 }
 
-.outerWrapper {
-  max-width: 1900px;
+.contentWrapper {
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
 
 header {
   background-color: #815600;
-  padding: 50px 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 25px 0;
 }
-header nav {
+header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 300;
+  margin-left: 100px;
 }
-header nav li {
-  margin-right: 60px;
+header ul li {
+  padding-right: 50px;
 }
 
-.titleImageContainer {
+.titleImageIcon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.headerTitle, .headerImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.headerTitle {
-  width: 47.5%;
+.headerTitle, .headerImage {
+  width: 50%;
 }
-
-.headerImage {
-  width: 47.5%;
+.headerTitle img, .headerImage img {
+  margin-left: 40px;
 }
 
 h1 {
@@ -343,20 +346,19 @@ h1 {
 .socialIcons i {
   font-size: 25px;
   padding-top: 15px;
+  padding-left: 100px;
+  padding-right: 50px;
 }
 
 .handCraftedFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   height: 300px;
 }
 
 .handCraftedImage {
-  width: 22.5%;
+  width: 25%;
   margin-right: 40px;
   overflow: hidden;
 }
@@ -364,14 +366,14 @@ h1 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: top 20px left 0;
-     object-position: top 20px left 0;
+  -o-object-position: top 15px left -20px;
+     object-position: top 15px left -20px;
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
 }
 
 .handCraftedText {
-  width: 77.5%;
+  width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,20 +409,23 @@ h1 {
           justify-content: space-between;
 }
 .latestCollectionFlex li {
-  width: 33.3333333333%;
+  width: 30%;
 }
 
 .catologueEventsCollaborationsFlex {
+  width: 70%;
+}
+.catologueEventsCollaborationsFlex ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 65%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
 }
 .catologueEventsCollaborationsFlex i {
-  font-size: 100px;
+  font-size: 75px;
   padding-bottom: 5px;
 }
 .catologueEventsCollaborationsFlex p {
@@ -435,6 +440,8 @@ h1 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 0;
+  margin: 0 auto;
+  max-width: 1900px;
 }
 
 .twoByTwoText1, .twoByTwoText2 {
@@ -445,7 +452,7 @@ h1 {
 }
 .twoByTwoText1 p, .twoByTwoText2 p {
   font-size: 20px;
-  font-weight: lighter;
+  font-weight: 300;
   line-height: 29px;
   letter-spacing: 0.2;
   padding-bottom: 40px;
@@ -453,17 +460,19 @@ h1 {
 
 .twoByTwoText1, .twoByTwoImage1, .twoByTwoText2, .twoByTwoImage2 {
   width: 50%;
+  height: auto;
 }
 .twoByTwoText1 img, .twoByTwoImage1 img, .twoByTwoText2 img, .twoByTwoImage2 img {
   width: 100%;
+  height: 100%;
 }
 
 .twoByTwoText1 {
-  padding: 160px 120px 120px 240px;
+  padding: 120px 80px 80px 160px;
 }
 
 .twoByTwoText2 {
-  padding: 160px 240px 120px 120px;
+  padding: 120px 160px 80px 80px;
 }
 
 .stayUpdatedFlex {
@@ -472,11 +481,11 @@ h1 {
   display: flex;
   font-size: 20px;
   line-height: 29px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .stayUpdatedNav {
-  width: 25%;
+  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,8 +496,9 @@ h1 {
 }
 
 .stayUpdatedForm {
-  width: 52.5%;
+  width: 57.5%;
   text-align: center;
+  margin-left: 50px;
 }
 .stayUpdatedForm h2 {
   padding-bottom: 40px;
@@ -499,7 +509,7 @@ h1 {
 }
 .stayUpdatedForm input[type=email] {
   display: inline-block;
-  width: 525px;
+  width: 425px;
   height: 50px;
   border: none;
   padding: 25px 10px;
@@ -529,7 +539,7 @@ h1 {
       -ms-flex-pack: end;
           justify-content: flex-end;
   text-align: right;
-  width: 22.5%;
+  width: 27.5%;
 }
 .stayUpdatedContact h3 {
   font-family: "Petit Formal Script", cursive;
