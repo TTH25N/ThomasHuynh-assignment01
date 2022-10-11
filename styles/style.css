@@ -439,9 +439,19 @@ h1 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-top: 0;
   padding-bottom: 0;
   margin: 0 auto;
-  max-width: 1900px;
+  max-width: 2000px;
+}
+
+.twoByTwoContainer1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 750px;
 }
 
 .twoByTwoText1, .twoByTwoText2 {
@@ -460,7 +470,6 @@ h1 {
 
 .twoByTwoText1, .twoByTwoImage1, .twoByTwoText2, .twoByTwoImage2 {
   width: 50%;
-  height: auto;
 }
 .twoByTwoText1 img, .twoByTwoImage1 img, .twoByTwoText2 img, .twoByTwoImage2 img {
   width: 100%;
@@ -485,7 +494,7 @@ h1 {
 }
 
 .stayUpdatedNav {
-  width: 20%;
+  width: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -553,4 +562,166 @@ footer {
   line-height: 29px;
   text-align: center;
   padding: 5px 0;
+}
+
+@media (max-width: 1360px) {
+  .headerWrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contentWrapper {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  section {
+    padding: 90px 0;
+  }
+  button {
+    font-size: 18px;
+    padding: 7.5px 20px;
+  }
+  header ul {
+    font-size: 18px;
+  }
+  header ul li {
+    padding-right: 40px;
+  }
+  header h1 {
+    font-size: 75px;
+  }
+  .handCraftedFlex {
+    height: 250px;
+  }
+  .handCraftedText p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .twoByTwo h2 {
+    padding-bottom: 30px;
+  }
+  .twoByTwo p {
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 30px;
+  }
+  .stayUpdatedFlex {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .stayUpdatedFlex h3 {
+    font-size: 40px;
+  }
+  .stayUpdatedForm {
+    width: 52.5%;
+    margin-left: 0;
+  }
+  .stayUpdatedForm input[type=email] {
+    width: 350px;
+  }
+  .stayUpdatedForm input[type=submit] {
+    width: 150px;
+  }
+  .stayUpdatedContact {
+    width: 32.5%;
+  }
+}
+@media (max-width: 1240px) {
+  .twoByTwoText1 {
+    padding: 80px 40px 40px 120px;
+  }
+  .twoByTwoText2 {
+    padding: 80px 80px 40px 80px;
+  }
+}
+@media (max-width: 1140px) {
+  .headerWrapper {
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contentWrapper {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  section {
+    padding: 80px;
+  }
+  button {
+    font-size: 16px;
+    padding: 5px 15px;
+  }
+  header ul {
+    font-size: 15px;
+  }
+  header ul li {
+    padding-right: 30px;
+  }
+  header h1 {
+    font-size: 54px;
+    line-height: 60px;
+  }
+  .handCraftedFlex {
+    height: 200px;
+  }
+  .handCraftedText p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .latestCollection h2 {
+    margin-bottom: 40px;
+  }
+  .catologueEventsCollaborationsFlex i {
+    font-size: 60px;
+    padding-bottom: 5px;
+  }
+  .catologueEventsCollaborationsFlex p {
+    font-size: 32px;
+  }
+  .twoByTwo {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .twoByTwo h2 {
+    padding-bottom: 20px;
+  }
+  .twoByTwo p {
+    font-size: 15px;
+    line-height: 22px;
+    padding-bottom: 20px;
+  }
+  .stayUpdatedFlex {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .stayUpdatedFlex h3 {
+    font-size: 30px;
+  }
+  .stayUpdatedForm {
+    width: 55%;
+    margin-left: 0;
+  }
+  .stayUpdatedForm input[type=email] {
+    width: 275px;
+    height: 40px;
+    padding: 10px 5px;
+  }
+  .stayUpdatedForm input[type=submit] {
+    width: 125px;
+    height: 44px;
+  }
+  .stayUpdatedContact {
+    width: 30%;
+  }
+  footer p {
+    font-size: 15px;
+  }
 }
