@@ -87,6 +87,10 @@ header {
     }
 }
 
+.fa-solid.fa-bars {
+    display: none;
+}
+
 .titleImageIcon {
     display: flex;
     justify-content: space-between;
@@ -265,7 +269,7 @@ h1 {
     width: 15%;
     display: flex;
     align-items: flex-end;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .stayUpdatedForm {
@@ -302,7 +306,13 @@ h1 {
         font-family: $headerFontFamily;
         cursor: pointer;
     }
+
+    ::placeholder {
+        color: transparent;
+   }
 }
+
+
 
 .stayUpdatedContact {
     display: flex;
@@ -576,6 +586,276 @@ footer {
     footer {
         p {
             font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+
+    // GENERAL
+
+    h2 {
+        font-size: 25px;
+    }
+
+    section {
+        padding: 50px 10px;
+    }
+
+    .contentWrapper {
+        max-width: 280px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    // HEADER
+
+    header {
+        padding: 10px 20px;
+
+        ul {
+            display: none;
+        }
+
+        h1 {
+            font-size: 36px;
+            line-height: 40px;
+            padding: 25px 0;
+        }
+
+        .socialIcons {
+            display: none;
+        }
+    }
+
+    .fa-solid.fa-bars {
+        display: block;
+        text-align: right;
+        font-size: 50px;
+    }
+
+    .titleImageIcon {
+        flex-direction: column;
+    }
+
+    .headerTitle,
+    .headerImage {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .headerImage {
+        position: relative;
+        height: 300px;
+
+        img {
+            position: absolute;
+            right: 50px;
+        }
+    }
+
+    // HAND CRAFTED SECTION
+
+    .handCraftedFlex {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .handCraftedImage {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            object-position: top 10px left 35px;
+            transform: scale(1.45);
+        }
+    }
+
+    .handCraftedText {
+        width: 100%;
+
+        h2 {
+            padding: 25px 0;
+            text-align: center;
+        }
+
+        p {
+            font-size: 12px;
+            text-align: left;
+            line-height: 20px;
+            padding-bottom: 25px;
+        }
+
+        button {
+            align-self: center;
+        }
+    }
+
+    // LATEST COLLECTION SECTION
+
+    .latestCollectionFlex {
+        li:nth-of-type(2) {
+            display: none;
+        }
+
+        li {
+            width: 47.5%;
+        }
+    }
+
+    // CATOLOGUE, EVENTS, COLLABORATIONS SECTION
+
+    .catologueEventsCollaborationsFlex {
+        width: 100%;
+
+        ul {
+            flex-direction: column;
+        }
+
+        li {
+            padding-bottom: 40px;
+        }
+
+        li:nth-of-type(3) {
+            padding-bottom: 0;
+        }
+    }
+
+    // TWO BY TWO SECTION
+
+    .twoByTwoText1,
+    .twoByTwoImage1,
+    .twoByTwoText2,
+    .twoByTwoImage2 {
+        width: 100%;
+    }
+
+    .twoByTwoText1 {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 10px;
+
+        h2 {
+            text-align: center;
+        }
+
+        button {
+            align-self: center;
+        }
+    }
+
+    .twoByTwoImage1 {
+        order: 1;
+        height: 175px;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .twoByTwoText2 {
+        order: 4;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 10px;
+
+        h2 {
+            text-align: center;
+        }
+
+        button {
+            align-self: center;
+        }
+    }
+
+    .twoByTwoImage2 {
+        order: 3;
+        height: 225px;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    // STAY UPDATED SECTION
+    .stayUpdated {
+        padding-top: 25px;
+    }
+
+    .stayUpdatedFlex {
+        flex-direction: column;
+    }
+
+    .stayUpdatedNav {
+        width: 100%;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            text-transform: capitalize;
+
+            li {
+                padding: 20px;
+                font-weight: 300;
+            }
+
+            li:nth-of-type(1) {
+                padding-left: 0;
+            }
+
+            li:nth-of-type(4) {
+                padding-right: 0;
+            }
+        }
+    }
+
+    .stayUpdatedForm {
+        width: 100%;
+
+        h2 {
+            padding: 20px 0;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        input[type=email] {
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        input[type=submit] {
+            height: 40px;
+            width: 150px;
+            background-color: #000;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        ::placeholder {
+            color: #000;
+       }
+    }
+
+    .stayUpdatedContact {
+        width: 100%;
+        text-align: center;
+
+        h3 {
+            font-size: 25px;
+        }
+
+        p {
+            font-weight: 400;
         }
     }
 }

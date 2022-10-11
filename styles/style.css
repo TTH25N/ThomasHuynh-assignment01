@@ -298,6 +298,10 @@ header ul li {
   padding-right: 50px;
 }
 
+.fa-solid.fa-bars {
+  display: none;
+}
+
 .titleImageIcon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -501,7 +505,7 @@ h1 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .stayUpdatedForm {
@@ -534,6 +538,21 @@ h1 {
   background-color: #1D0303;
   font-family: "Petit Formal Script", cursive;
   cursor: pointer;
+}
+.stayUpdatedForm ::-webkit-input-placeholder {
+  color: transparent;
+}
+.stayUpdatedForm ::-moz-placeholder {
+  color: transparent;
+}
+.stayUpdatedForm :-ms-input-placeholder {
+  color: transparent;
+}
+.stayUpdatedForm ::-ms-input-placeholder {
+  color: transparent;
+}
+.stayUpdatedForm ::placeholder {
+  color: transparent;
 }
 
 .stayUpdatedContact {
@@ -723,5 +742,269 @@ footer {
   }
   footer p {
     font-size: 15px;
+  }
+}
+@media (max-width: 320px) {
+  h2 {
+    font-size: 25px;
+  }
+  section {
+    padding: 50px 10px;
+  }
+  .contentWrapper {
+    max-width: 280px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  header {
+    padding: 10px 20px;
+  }
+  header ul {
+    display: none;
+  }
+  header h1 {
+    font-size: 36px;
+    line-height: 40px;
+    padding: 25px 0;
+  }
+  header .socialIcons {
+    display: none;
+  }
+  .fa-solid.fa-bars {
+    display: block;
+    text-align: right;
+    font-size: 50px;
+  }
+  .titleImageIcon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .headerTitle,
+.headerImage {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .headerImage {
+    position: relative;
+    height: 300px;
+  }
+  .headerImage img {
+    position: absolute;
+    right: 50px;
+  }
+  .handCraftedFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 500px;
+  }
+  .handCraftedImage {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .handCraftedImage img {
+    height: 200px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top 10px left 35px;
+       object-position: top 10px left 35px;
+    -webkit-transform: scale(1.45);
+            transform: scale(1.45);
+  }
+  .handCraftedText {
+    width: 100%;
+  }
+  .handCraftedText h2 {
+    padding: 25px 0;
+    text-align: center;
+  }
+  .handCraftedText p {
+    font-size: 12px;
+    text-align: left;
+    line-height: 20px;
+    padding-bottom: 25px;
+  }
+  .handCraftedText button {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .latestCollectionFlex li:nth-of-type(2) {
+    display: none;
+  }
+  .latestCollectionFlex li {
+    width: 47.5%;
+  }
+  .catologueEventsCollaborationsFlex {
+    width: 100%;
+  }
+  .catologueEventsCollaborationsFlex ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .catologueEventsCollaborationsFlex li {
+    padding-bottom: 40px;
+  }
+  .catologueEventsCollaborationsFlex li:nth-of-type(3) {
+    padding-bottom: 0;
+  }
+  .twoByTwoText1,
+.twoByTwoImage1,
+.twoByTwoText2,
+.twoByTwoImage2 {
+    width: 100%;
+  }
+  .twoByTwoText1 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px 10px;
+  }
+  .twoByTwoText1 h2 {
+    text-align: center;
+  }
+  .twoByTwoText1 button {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .twoByTwoImage1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    height: 175px;
+  }
+  .twoByTwoImage1 img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .twoByTwoText2 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px 10px;
+  }
+  .twoByTwoText2 h2 {
+    text-align: center;
+  }
+  .twoByTwoText2 button {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .twoByTwoImage2 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    height: 225px;
+  }
+  .twoByTwoImage2 img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .stayUpdated {
+    padding-top: 25px;
+  }
+  .stayUpdatedFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .stayUpdatedNav {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .stayUpdatedNav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-transform: capitalize;
+  }
+  .stayUpdatedNav ul li {
+    padding: 20px;
+    font-weight: 300;
+  }
+  .stayUpdatedNav ul li:nth-of-type(1) {
+    padding-left: 0;
+  }
+  .stayUpdatedNav ul li:nth-of-type(4) {
+    padding-right: 0;
+  }
+  .stayUpdatedForm {
+    width: 100%;
+  }
+  .stayUpdatedForm h2 {
+    padding: 20px 0;
+  }
+  .stayUpdatedForm label {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .stayUpdatedForm input[type=email] {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 300;
+  }
+  .stayUpdatedForm input[type=submit] {
+    height: 40px;
+    width: 150px;
+    background-color: #000;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .stayUpdatedForm ::-webkit-input-placeholder {
+    color: #000;
+  }
+  .stayUpdatedForm ::-moz-placeholder {
+    color: #000;
+  }
+  .stayUpdatedForm :-ms-input-placeholder {
+    color: #000;
+  }
+  .stayUpdatedForm ::-ms-input-placeholder {
+    color: #000;
+  }
+  .stayUpdatedForm ::placeholder {
+    color: #000;
+  }
+  .stayUpdatedContact {
+    width: 100%;
+    text-align: center;
+  }
+  .stayUpdatedContact h3 {
+    font-size: 25px;
+  }
+  .stayUpdatedContact p {
+    font-weight: 400;
   }
 }
